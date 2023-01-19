@@ -1,6 +1,7 @@
 # Compiled class file
 *.class
 
+__pycache__/
 env/
 venv/
 
