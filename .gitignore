@@ -246,7 +246,7 @@ venv/
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
-*.idea
+.idea/
 */dist/
 
 # Godot 4+ specific ignores
@@ -264,3 +264,6 @@ export_presets.cfg
 .mono/
 data_*/
 mono_crash.*.json
+
+.ipynb_checkpoints/
+*.json
