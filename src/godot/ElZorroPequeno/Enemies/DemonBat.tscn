@@ -1,0 +1,56 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Enemies/BaseBatModel.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Enemies/DemonBat.gdshader" type="Shader" id=2]
+
+[sub_resource type="ShaderMaterial" id=1]
+resource_local_to_scene = true
+shader = ExtResource( 2 )
+shader_param/active = false
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 6.0
+height = 10.0
+
+[sub_resource type="CircleShape2D" id=3]
+radius = 100.0
+
+[sub_resource type="CapsuleShape2D" id=4]
+radius = 3.0
+height = 2.0
+
+[sub_resource type="CircleShape2D" id=5]
+radius = 5.0
+
+[node name="DemonBat" type="YSort"]
+
+[node name="BaseBatModel" parent="." instance=ExtResource( 1 )]
+ACCELERATION = 750
+MAX_SPEED = 100
+KNOCKBACK = 250
+
+[node name="AnimatedSprite" parent="BaseBatModel" index="0"]
+material = SubResource( 1 )
+speed_scale = 1.5
+
+[node name="CollisionShape2D" parent="BaseBatModel/HurtBox" index="0"]
+position = Vector2( 0, -11 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D" parent="BaseBatModel/PlayerDetectionZone" index="0"]
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D" parent="BaseBatModel/HitBox" index="0"]
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D" parent="BaseBatModel/SoftCollision" index="0"]
+shape = SubResource( 5 )
+
+[node name="Stats" parent="BaseBatModel" index="9"]
+max_health = 1
+
+[editable path="BaseBatModel"]
+[editable path="BaseBatModel/HurtBox"]
+[editable path="BaseBatModel/PlayerDetectionZone"]
+[editable path="BaseBatModel/HitBox"]
+[editable path="BaseBatModel/SoftCollision"]

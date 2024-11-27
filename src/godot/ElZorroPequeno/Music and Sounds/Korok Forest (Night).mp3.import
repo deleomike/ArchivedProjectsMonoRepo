@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Korok Forest (Night).mp3-b3e05d7bd751a5c4dbb627bb8831249b.mp3str"
+
+[deps]
+
+source_file="res://Music and Sounds/Korok Forest (Night).mp3"
+dest_files=[ "res://.import/Korok Forest (Night).mp3-b3e05d7bd751a5c4dbb627bb8831249b.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -2,7 +2,7 @@
 
 Welcome to my archive repo, whether this is me in the future or someone who came across this repo; *Welcome*.
 
-This Monorepo is for many of my C++ projects from back in College.
+This Monorepo is for many of my random projects.
 
 They are not all notable, some are tutorials/small class assignments or notes on how to do things in C++/Java/Python.
 

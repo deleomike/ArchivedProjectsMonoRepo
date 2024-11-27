@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Hyrule Field (Day).mp3-74adbc378bdbf244b92abd353a30209b.mp3str"
+
+[deps]
+
+source_file="res://Music and Sounds/Hyrule Field (Day).mp3"
+dest_files=[ "res://.import/Hyrule Field (Day).mp3-74adbc378bdbf244b92abd353a30209b.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

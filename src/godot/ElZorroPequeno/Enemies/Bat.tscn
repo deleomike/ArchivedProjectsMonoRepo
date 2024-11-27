@@ -1,0 +1,67 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Enemies/BaseBatModel.tscn" type="PackedScene" id=1]
+
+[sub_resource type="Shader" id=1]
+resource_local_to_scene = true
+code = "shader_type canvas_item;
+
+uniform bool active = false;
+
+void fragment() {
+	vec4 prev_color = texture(TEXTURE, UV);
+	vec4 white_color = vec4(1.0, 1.0, 1.0, prev_color.a);
+	vec4 new_color = prev_color;
+	if (active == true){
+		new_color = white_color;
+	}
+	COLOR = new_color;
+}"
+
+[sub_resource type="ShaderMaterial" id=2]
+resource_local_to_scene = true
+shader = SubResource( 1 )
+shader_param/active = false
+
+[sub_resource type="CapsuleShape2D" id=3]
+radius = 5.0
+height = 10.0
+
+[sub_resource type="CircleShape2D" id=4]
+radius = 51.0
+
+[sub_resource type="CapsuleShape2D" id=5]
+radius = 2.0
+height = 5.99999
+
+[sub_resource type="CircleShape2D" id=6]
+radius = 5.0
+
+[node name="Bat" type="YSort"]
+
+[node name="BaseBatModel" parent="." instance=ExtResource( 1 )]
+KNOCKBACK = 125
+
+[node name="AnimatedSprite" parent="BaseBatModel" index="0"]
+material = SubResource( 2 )
+frame = 2
+
+[node name="CollisionShape2D" parent="BaseBatModel/HurtBox" index="0"]
+position = Vector2( 0, -11 )
+shape = SubResource( 3 )
+
+[node name="CollisionShape2D" parent="BaseBatModel/PlayerDetectionZone" index="0"]
+visible = false
+shape = SubResource( 4 )
+
+[node name="CollisionShape2D" parent="BaseBatModel/HitBox" index="0"]
+shape = SubResource( 5 )
+
+[node name="CollisionShape2D" parent="BaseBatModel/SoftCollision" index="0"]
+shape = SubResource( 6 )
+
+[editable path="BaseBatModel"]
+[editable path="BaseBatModel/HurtBox"]
+[editable path="BaseBatModel/PlayerDetectionZone"]
+[editable path="BaseBatModel/HitBox"]
+[editable path="BaseBatModel/SoftCollision"]

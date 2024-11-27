@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Enemies/DemonBat.tscn" type="PackedScene" id=1]
+
+[node name="DemonBatSquad" type="YSort"]
+
+[node name="DemonBat" parent="." instance=ExtResource( 1 )]
+position = Vector2( -16, 0 )
+
+[node name="DemonBat2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 16, 0 )
+
+[node name="DemonBat3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 0, 16 )
+
+[node name="DemonBat4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 0, -16 )
