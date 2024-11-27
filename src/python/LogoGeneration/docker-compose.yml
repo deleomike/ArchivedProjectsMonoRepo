@@ -1,0 +1,6 @@
+services:
+  stable_diffusion:
+    image: michaeldeleo31/stable-diffusion:latest
+    build: 
+      context: ./cloud_run/stable_diffusion/
+      dockerfile: Dockerfile

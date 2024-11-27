@@ -1,0 +1,9 @@
+transformers==4.31.0
+diffusers 
+invisible-watermark
+pydantic
+fastapi
+uvicorn
+accelerate
+jupyter
+lab
