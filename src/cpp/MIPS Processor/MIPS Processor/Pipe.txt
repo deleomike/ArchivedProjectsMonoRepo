@@ -1,0 +1,29 @@
+                    t1   t2   t3   t4   t5   t6   t7   t8   t9   t10   t11   t12   t13   
+  add $a0,$a1,$a1   IF   ID   EX  MEM   WB                                        
+stall                     S    S    S    S    S                                   
+stall                          S    S    S    S    S                              
+stall                               S    S    S    S    S                         
+  add $a0,$a1,$b0                       IF   ID   EX  MEM   WB                    
+stall                                         S    S    S    S    S               
+stall                                              S    S    S    S    S          
+stall                                                   S    S    S    S    S     
+  add $a0,$a1,$c0                                           IF   ID   EX  MEM   WB
+
+                    t1   t2   t3   t4   t5   t6   t7   t8   t9   t10   
+  add $b0,$b1,$b0   IF   ID   EX  MEM   WB                         
+stall                     S    S    S    S    S                    
+stall                          S    S    S    S    S               
+stall                               S    S    S    S    S          
+  add $b3,$b2,$b0                       IF   ID   EX  MEM   WB     
+  add $d4,$b5,$b6                            IF   ID   EX  MEM   WB
+
+                    t1   t2   t3   t4   t5   t6   t7   t8   t9   
+  add $c0,$c1,$c1   IF   ID   EX  MEM   WB                    
+stall                     S    S    S    S    S               
+stall                          S    S    S    S    S          
+stall                               S    S    S    S    S     
+  add $c0,$c1,$d0                       IF   ID   EX  MEM   WB
+
+                    t1   t2   t3   t4   t5   
+  add $d0,$d0,$d1   IF   ID   EX  MEM   WB
+

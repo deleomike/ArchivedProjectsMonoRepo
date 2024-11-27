@@ -1,0 +1,14 @@
+.parallel
+.alpha
+add $a0, $a0, $a1, 1
+add $a0, $a0, $b0, 2
+add $a0, $a0, $c0, 3
+.bravo
+add $b0, $b1, $b0, 1
+add $b3, $b2, $b0, 2
+add $d4, $b5, $b6, 3
+.charlie
+add $c0, $c0, $c1, 1
+add $c0, $c0, $d0, 2
+.delta
+add $d0, $d0, $d1, 1

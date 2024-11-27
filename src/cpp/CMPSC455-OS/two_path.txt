@@ -1,0 +1,21 @@
+Pid 1: ./two
+	fork 1: cpid 2
+	wait
+Pid 2: fork 1
+	fork 2: cpid 3
+	wait
+Pid 3: fork 2
+	print gen=2:fork=2:pid=3:ppid=2
+	return
+Pid 2: wait
+	print gen=1:fork=1:pid=2:ppid=1
+	return
+Pid 1: wait
+	fork 2: cpid 4
+	wait
+Pid 4: fork 2
+	print gen=1:fork=2:pid=4:ppid=1
+	return
+Pid 1: wait
+	print gen=0:fork=0:pid=1:ppid=bash
+	return
