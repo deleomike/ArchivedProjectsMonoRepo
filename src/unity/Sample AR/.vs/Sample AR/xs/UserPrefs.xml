@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{24F34A26-AA47-FDA8-46B0-4A4BB6C81B3E}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/TapToPlace.cs">
+    <Files>
+      <File FileName="Assets/TapToPlace.cs" Line="12" Column="6" />
+      <File FileName="Assets/Location.cs" Line="3" Column="19" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Sample AR" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="TapToPlace.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="87706777-0b39-4cd6-8f15-a8039f0740f4" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
