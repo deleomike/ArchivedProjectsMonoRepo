@@ -1,8 +1,0 @@
-gen=3:fork=3:pid=6858:ppid=6857
-gen=2:fork=2:pid=6857:ppid=6856
-gen=3:fork=4:pid=6860:ppid=6859
-gen=2:fork=3:pid=6859:ppid=6856
-gen=1:fork=1:pid=6856:ppid=6855
-gen=2:fork=4:pid=6862:ppid=6861
-gen=1:fork=3:pid=6861:ppid=6855
-gen=0:fork=0:pid=6855:ppid=4363
