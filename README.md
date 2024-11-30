@@ -11,8 +11,6 @@ There are a few notable mentions however.
   - [A MIPS Process Simulation in C++](./src/cpp/MIPS%20Processor/)
   - Communication and Control
     - [A Raspberry PI SPI Script](./src/cpp/Raspberry-Pi-SPI-slave/)
-    - [SPI](./src/MPLABXProjects/SPI.X/)
-    - [I2C](./src/MPLABXProjects/I2C_Slave.X/)
   - Algorithms
     - [Finite Impulse Response Filter](./src/cpp/FIR_FileOutput/)
     - [8 Bin FFT](./src/cpp/8BinFFT/)
